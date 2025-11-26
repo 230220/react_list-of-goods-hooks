@@ -28,7 +28,6 @@ export const App: React.FC = () => {
 
   const visibleGoods = [...goodsFromServer];
 
-  // Сортировка
   switch (sortType) {
     case SortType.ALPHABET:
       visibleGoods.sort((a, b) => a.localeCompare(b));
@@ -40,7 +39,6 @@ export const App: React.FC = () => {
       break;
   }
 
-  // Reverse
   if (reversed) {
     visibleGoods.reverse();
   }
